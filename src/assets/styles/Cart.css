@@ -1,0 +1,150 @@
+.cart-container {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.para {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  max-width: 100%;
+  color: #777;
+}
+
+.footer {
+  background-color: #ffffff;
+
+  position: absolute;
+  bottom: 0;
+  width: 97.5%;
+  max-height: 80%;
+
+  margin-bottom: 50px;
+
+  border-radius: 5px;
+}
+
+tr {
+  font-weight: bold;
+}
+td {
+  font-weight: lighter;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.cart-header {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll-item {
+  overflow-y: scroll;
+  max-height: 52vh;
+}
+.cart-item,
+.cart-quantity,
+.cart-price,
+.centerTheCartName {
+  text-align: center;
+}
+
+.tax {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: absolute;
+  margin-bottom: 10px;
+  bottom: 0;
+  width: 100%;
+}
+.purch_span,
+.cancle_span {
+  width: 45%;
+}
+.purchase {
+  border: none;
+  width: 90%;
+  font-size: medium;
+  font-weight: bold;
+  padding: 5px;
+  background-color: rgb(49, 220, 43);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.cancle {
+  border: none;
+  width: 90%;
+  padding: 5px;
+  background-color: rgb(244, 60, 60);
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+@media (max-width: 360px) {
+  .footer table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  td {
+    font-weight: lighter;
+    font-size: 13px;
+  }
+  .purchase,
+  .cancle {
+    font-size: small;
+  }
+}
+
+@media (max-width: 890px) {
+  .footer table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  td {
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .purchase,
+  .cancle {
+    font-size: small;
+  }
+}
